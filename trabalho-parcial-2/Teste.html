@@ -5,12 +5,25 @@
 <link rel="stylesheet" type="text/css" href="stile.css">
 </head>
 <body>
-  <section>
-    <button  type = "button" id="curtir"> curtir </button>
+  <form id="comments_form" action="#" method="post">
 
-      <b id="curtir1"></b>
-  </section>
+  <fieldset>
+    <legend>Comments</legend>
+    <p>
+      <label for="text">Message: <em class="required">(Required)</em></label>
+      <textarea name="text" id ="texto" cols="20" rows="10"></textarea>
+    </p>
+  </fieldset>
 
-  <script src="botao.js"></script>
+  <p>
+    <input id = "btSubmit" type="button" value="Submit!" />
+  </p>
+
+  <p id = "insereTexto">
+  </p>
+
+</form>
+
+  <script src="funcionalidade.js"></script>
 </body>
 </html>

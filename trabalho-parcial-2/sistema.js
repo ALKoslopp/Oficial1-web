@@ -17,7 +17,12 @@ function curtir(){
   //display.value = display.value + valorAtual;
 }
 
-
+function comentar(){
+  var getTexto = document.getElementById("texto");
+  var publicar = document.getElementById("insereComentario");
+  publicar.innerText = getTexto.value;
+  console.log("entrou aqui");
+}
 
 
 
@@ -25,6 +30,8 @@ function curtir(){
 window.onload = function() {
   var botaoCurtir = document.getElementById("btCurtir");
   botaoCurtir.addEventListener("click", curtir);
+  var comenta = document.getElementById("comentario");
+  comenta.addEventListener("click", comentar);
 
 
   //display = document.getElementById("calculadora-display");
